@@ -1,0 +1,81 @@
+:root {
+  --text-color: white;
+  --background-color: black;
+  --background-color-hover: rgb(74, 74, 74);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  body {
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    height: 100vh;
+  }
+
+  .app {
+    height: 100vh;
+  }
+
+  #screen {
+    width: 80vw;
+    height: 50px;
+
+    margin: 15px auto 30px auto;
+    
+    background-color: var(--background-color-hover);
+
+    border: 1px solid var(--background-color-hover);
+    border-radius: 5px;
+  }
+
+
+  button {
+    width: 50px;
+    height: 25px;
+
+    border-radius: 8px;
+    color: var(--text-color);
+
+    background-color: var(--background-color);
+
+    border: none;
+    transition: transform 0.25s ease-in;
+  }
+
+  button:hover {
+    background-color: var(--background-color-hover);
+
+    transform: scale(1.02);
+  }
+
+  ul {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    gap: 5px;
+
+    height: 450px;
+  }
+
+
+
+}
+
+
+@media (min-width: 1080px) {}
